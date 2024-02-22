@@ -1,10 +1,10 @@
-const first = [5,7,8,9,10];
-const second = [14,46,67,50];
+let first = [5,7,8,9,10];
+let second = [14,46,67,50];
 
-const addTwoArray = (first , second) => {
-    const addSumTwo = first + " ," +second;
-    const maxOf = Math.max(addSumTwo)
-    console.log(maxOf);
+let addTwoArray = (first , second) => {
+    const addSumTwo = [...first,...second];
+    const maxNumber = Math.max(...addSumTwo);
+    console.log(maxNumber);
 }
 
 addTwoArray(first,second);
